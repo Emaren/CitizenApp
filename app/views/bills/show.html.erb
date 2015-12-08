@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container-fluid">
+
+    <div class="bill-title-show-container">
+      <div class="bill-title-show">
+      <strong>Title:</strong>
+      <%= @bill.title %>
+      <strong>End date:</strong>
+      <%= @bill.end_date %>
+      <strong>Description:</strong>
+      <%= @bill.description %>
+      <strong>Author:</strong>
+      <%= @bill.author %>
+      </div>
+    </div>
+    <div class="btn btn-group">
+
+    <div class="btn-custom">
+    <%= link_to 'Edit', edit_bill_path(@bill) %>
+    </div>
+    <div class="btn-custom">
+
+    <%= link_to 'Back', bills_path %>
+    </div>
+    </div>
+</div>
