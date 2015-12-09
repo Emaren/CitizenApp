@@ -4,22 +4,31 @@
 @import "font-awesome";
 
   #nav-title {
+   position: absolute;
+   text-align: center;
    font-size: 35px;
-   margin: 10px 0px 0px 0px;
-   position: relative;
+   margin: 0px 0px 0px 0px;
+   width: 100%;
   //  Gradient Text with Stroke
-   background: -webkit-linear-gradient(white, #991f00, white, white);
+   background: -webkit-linear-gradient(red !important);
    -webkit-background-clip: text;
    -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: grey;
  }
 
 .navbar-custom {
-
+position: relative;
+padding: 0px 0px 0px 50px;
 background: -moz-linear-gradient(-45deg,  #4c4c4c 0%, #000000 1%, #000000 1%, #2c2c2c 50%, #1a556b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(-45deg,  #4c4c4c 0%,#000000 1%,#000000 1%,#2c2c2c 50%,#1a556b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg,  #4c4c4c 0%,#000000 1%,#000000 1%,#2c2c2c 50%,#1a556b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin: 0px 150px 50px 0px;
+box-shadow: 10px 10px 5px;
 
 }
 
@@ -42,7 +51,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 
  .bill-title {
    position: relative;
-
    background-image: url("cf.jpg");
    border: 2px solid black;
      width: 260px;
@@ -52,71 +60,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
    -moz-border-radius: 5px;
    border-radius: 5px;
    margin: 0px 150px 50px 0px;
-   box-shadow: 10px 10px 5px;
 
  }
 
 .bill-title-show {
-}
-.bill-ed-show {
-}
-.bill-description-show {
-}
 
+}
  .bill-title-show-container {
-
-   height: 350px;
-       width: 250px;
-       margin-bottom: 40px;
-       box-sizing: border-box;
-       background-color: #fff;
-       border-radius: 5px;
-       box-shadow: 3px 3px 5px 6px #ccc;
-       padding: 1.5em 1.25em;
-
- }
- .bill-ed-show-container {
-   height: 100px;
-   weight: 600px;
-   border: 2px solid black;
-   border-radius: 15%;
-
-   text-align: center;
-   padding-top: 40px;
-   position: relative;
- }
- .bill-description-show-container {
-   height: 100px;
-   weight: 600px;
-   border: 2px solid black;
-   border-radius: 15%;
-
-   text-align: center;
-   padding-top: 40px;
-   position: relative;
- }
- .bill-author-show-container {
-   height: 100px;
-   weight: 600px;
-   border: 2px solid black;
-   border-radius: 15%;
-
-   text-align: center;
-   padding-top: 40px;
-   position: relative;
+   box-sizing: border-box;
+  	background-color: #fff;
+  	border-radius: 5px;
+  	box-shadow: 10px 10px 20px 10px #ccc;
+  	padding: 1.5em 1.25em;
+    width: 25%;
+    position: static;
+   margin: auto;
  }
 
- .btn-custom {
- color: darken(#f1c40f, 5%);
- background-color: #fff;
- border: 1px solid darken(#f1c40f, 5%);
- padding: 8px 20px;
- border-radius: 5px;
- font-family: 'Ubuntu', sans-serif;
- &:hover {
-   text-decoration: none;
-   background-color: darken(#f1c40f, 5%);
-   color: #fff;
-   transition: 0.5s;
- }
+.end-tag {
+  width: 150px;
+  height: 100px;
+  border: 1px solid;
+  position: relative;
+  z-index: -1;
+  align-content: center;
+  width: 220px;
 }
+
+.end-tag-time {
+
+  }
