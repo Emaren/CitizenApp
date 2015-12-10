@@ -38,29 +38,37 @@ box-shadow: 10px 10px 5px;
  }
 
  .bill-image-link {
-
-   left: 0;
-    position:absolute;
-    text-align:center;
-    top: 70px;
-    width: 100%;
-
-   font-weight: 900;
-    color: black;
- }
-
- .bill-title {
    position: relative;
-   background-image: url("cf.jpg");
+    background-image: url("cf.jpg");
+
+
    border: 2px solid black;
      width: 260px;
      height: 164px;
-    //  shadow
+
+   font-weight: 300;
+    color: black;
    webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
    margin: 0px 150px 50px 0px;
+ }
 
+ .bill-title {
+    position:absolute;
+   font-size: 40px;
+    line-height: 110%;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0px 0px 0px 0px;
+
+    //  shadow
+    color: black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+z-index: 3
  }
 
 .bill-title-show {
@@ -70,7 +78,7 @@ box-shadow: 10px 10px 5px;
    box-sizing: border-box;
   	background-color: #fff;
   	border-radius: 5px;
-  	box-shadow: 10px 10px 20px 10px #ccc;
+  	box-shadow: 0px 0px 30px 5px #ccc;
   	padding: 1.5em 1.25em;
     width: 25%;
     position: static;
@@ -82,7 +90,6 @@ box-shadow: 10px 10px 5px;
   height: 100px;
   border: 1px solid;
   position: relative;
-  z-index: -1;
   align-content: center;
   width: 220px;
 }
@@ -90,3 +97,14 @@ box-shadow: 10px 10px 5px;
 .end-tag-time {
 
   }
+
+.edit-buttons {
+  border: 1px solid black;
+
+  border-radius: 5px;
+  width: 13%;
+  margin: auto;
+  position: static;
+  z-index: -1;
+  margin-bottom: 20px;
+}

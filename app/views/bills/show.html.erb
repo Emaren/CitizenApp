@@ -14,3 +14,16 @@
       <p><%= @bill.author %></p>
       </div>
     </div>
+
+    <div class="edit-buttons">
+      <div class="btn btn-group">
+        <%= link_to "Edit", edit_bill_path(@bill) %>
+        <%= link_to "Delete", bill_path(@bill), method: :delete, data: {confirm: "Confirm Deletion?"} %>
+        <%= link_to "Back", bills_path %>
+      </div>
+    </div>
+
+
+      </div>
+
+    </div>
