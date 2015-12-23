@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+
+
+
   resources :bills
   devise_for :lawmakers
   # The priority is based upon order of creation: first created -> highest priority.
